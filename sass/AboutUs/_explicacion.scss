@@ -1,0 +1,21 @@
+.explicacion-1 ul li {
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  .explicacion-1 {
+    margin-top: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .explicacion-1 .steve {
+    box-shadow: #fdfdfd;
+    margin-top: 30px;
+    width: 20vw;
+  }
+  .opc ul {
+    margin-top: 20px;
+  }

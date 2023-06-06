@@ -1,18 +1,27 @@
+/* Receteo */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-main {
-  scroll-snap-type: y proximity;
-}
+/* Barra de navegacion */
 .navbar .navbar-expand-lg bg-light {
   justify-content: center;
 }
+
+h1.display-1.fw-bolder.text-capitalize.text-white {
+  text-shadow: 0 0 5px #000;
+  font-size: 6rem;
+}
+
+.logito {
+  height: 36px;
+}
+
+/* Carousel */
 .carousel .carousel-item {
   scroll-snap-align: center;
   height: 93.9vh;
@@ -27,12 +36,7 @@ main {
   min-height: 50%;
 }
 
-h1.display-1.fw-bolder.text-capitalize.text-white {
-  text-shadow: 0 0 5px #000;
-  font-size: 6rem;
-}
-/* Cards */
-
+/* Cartas productos*/
 .contenedor {
   scroll-snap-align: center;
   background: url(../image/fondo.avif) center;
@@ -47,6 +51,7 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   height: 100vh;
   position: relative;
 }
+
 .contenedor::before {
   content: "";
   inset: 0;
@@ -55,6 +60,7 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   background: rgba(255, 0, 0, 0);
   backdrop-filter: blur(4px);
 }
+
 .carta {
   display: flex;
   flex-direction: column;
@@ -79,22 +85,25 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   height: 210px;
   object-fit: contain;
 }
+
 .carta .contenido h3 {
   padding: 15px;
   text-align: center;
 }
+
 .carta .contenido a {
   text-decoration: none;
   color: #000;
 }
 
+/* Grid Entretenimiento*/
 .container-grid {
   padding: 8px;
   width: 99vw;
-  height: 100vh;
+  height: max-content;
   display: grid;
-  grid-template-columns: repeat(2, 945px);
-  grid-template-rows: repeat(3, 600px);
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 600px);
 }
 
 .container-grid img {
@@ -113,11 +122,13 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   flex-direction: column;
   align-items: center;
 }
+
 .container-grid h2 {
   color: #dfd3d3;
   justify-content: center;
   margin: 20px;
 }
+
 .container-grid a {
   text-decoration: none;
   color: #3280b4;
@@ -135,6 +146,7 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   flex-direction: column;
   align-items: center;
 }
+
 .container-grid .Music {
   margin-left: 8px;
   margin-top: 8px;
@@ -148,10 +160,12 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   flex-direction: column;
   align-items: center;
 }
+
 .container-grid .Music img {
   width: 42%;
   height: 250px;
 }
+
 .entretenimiento {
   display: inline;
   text-align: center;
@@ -160,6 +174,7 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   justify-content: center;
   align-items: center;
 }
+
 .entretenimiento img {
   margin: 10px;
   width: 100px;
@@ -171,37 +186,45 @@ h1.display-1.fw-bolder.text-capitalize.text-white {
   font-size: 50px;
   flex-direction: row;
 }
+
+/* Footer */
 footer {
-  margin-top: 245px;
+  margin-top: 30px;
   width: 100%;
   height: 30px;
   background-color: rgb(255, 255, 255);
   justify-content: center;
   display: flex;
 }
+
 footer div ul li {
   display: inline-block;
   padding: 7px;
 }
+
 footer div ul li a {
   color: #000;
   text-decoration: none;
 }
+
 footer div ul li a:hover {
   color: #000;
   text-decoration: none;
 }
+
 footer div ul li img {
   width: 30px;
   height: 30px;
 }
+
+/* soporte imgagenes y titulo */
 .titulo h1 {
   margin-top: 20px;
   font-size: 64px;
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-align: center;
 }
+
 .soporte-grid {
   display: flex;
   text-align: center;
@@ -209,16 +232,18 @@ footer div ul li img {
   margin-top: 50px;
   align-items: center;
 }
+
 .soporte-grid img {
   width: 100%;
   height: 100px;
   object-fit: cover;
 }
+
+/* Collage imagenes */
 .about-container {
   display: grid;
   height: 50vh;
   width: 100%;
-
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
@@ -231,52 +256,36 @@ footer div ul li img {
   grid-row: span 2;
   border: 5px solid white;
 }
+
 .about-container div img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 .about-container .img-2 {
   grid-row: 1/2;
   grid-column: 2/3;
 }
+
 .about-container .img-3 {
   grid-row: 1/2;
   grid-column: 3/4;
 }
+
 .about-container .img-6 {
   grid-column: 2/4;
   grid-row: 2/4;
 }
 
-.explicacion-1 ul li {
-  font-size: 20px;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-.explicacion-1 {
-  margin-top: 15px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.explicacion-1 .steve {
-  box-shadow: #fdfdfd;
-  margin-top: 30px;
-  width: 20vw;
-}
-.opc ul {
-  margin-top: 20px;
-}
-
+/* Cartas soporte */
 .card {
   margin-top: 70px;
   box-shadow: 0 0 3px rgb(104, 102, 102);
   border-radius: 20px;
   transition: scale 0.2s;
 }
+
 .card:hover {
   scale: 1.1;
 }
@@ -287,6 +296,7 @@ footer div ul li img {
   align-items: center;
   gap: 40px;
 }
+
 .soport-card:hover {
   scale: 1.1;
 }
@@ -304,13 +314,43 @@ footer div ul li img {
   flex-direction: column;
   transition: scale 0.2s;
 }
+
 .soport-card img {
   height: 60%;
   object-fit: cover;
 }
+
 .soport-card h2 {
   font-size: 15px;
 }
+
+/* Explicacion */
+.explicacion-1 ul li {
+  font-size: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.explicacion-1 {
+  margin-top: 15px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explicacion-1 .steve {
+  box-shadow: #fdfdfd;
+  margin-top: 30px;
+  width: 20vw;
+}
+
+.opc ul {
+  margin-top: 20px;
+}
+
+/* Obtener soporte */
 .boton {
   margin-top: 50px;
   height: 100%;
@@ -318,6 +358,7 @@ footer div ul li img {
   align-items: center;
   justify-content: center;
 }
+
 .obt-soport h3 {
   font-size: 50px;
   margin-top: 80px;
@@ -325,6 +366,7 @@ footer div ul li img {
   justify-content: center;
   align-items: center;
 }
+
 .obt-soport p {
   margin-top: 20px;
   display: flex;
@@ -332,6 +374,7 @@ footer div ul li img {
   align-items: center;
   font-size: 20px;
 }
+
 .button {
   width: 140px;
   height: 45px;
@@ -357,98 +400,62 @@ footer div ul li img {
   transform: translateY(-7px);
 }
 
-@media screen and (max-width: 1280px) {
-  .steve {
-    width: 90%;
-  }
-  .container .card {
-    width: 50%;
-  }
+.contenedor-iphone {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1920px) {
-  .explicacion-1 .steve {
-    width: 40%;
-  }
-  .explicacion-1 ul li {
-    text-align: center;
-    margin: 10px;
-    font-size: 30px;
-    margin-right: 50px;
-  }
-  .card-text {
-    margin-top: 5px;
-    font-size: 20px;
-  }
-  .container .card img {
-    margin-top: 10px;
-    width: 13vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.img1 img {
+  margin-top: 60px;
+  width: 50vw;
 }
-@media screen and (max-width: 414px) {
-  .contenedor .carta {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .soporte-grid img {
-    width: 100%;
-    height: 60px;
-  }
-  .soport-card img {
-    object-fit: cover;
-    width: 100%;
-  
-  }
-  .soport-card h2 {
-    font-size: 10px;
-    margin: 5px;
-    text-align: center;
-  }
-  .soport-card {
-    width: 100px;
-  }
-  .titulo {
-    margin: 20px;
-  }
-  .about-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .explicacion-1 .steve {
-    width: 70%;
-  }
-  .titulo h1 {
-    font-size: 50px;
-    margin-top: 0%;
-    text-align: center;
-  }
-  .explicacion-1 ul li {
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
-    margin-right: 50px;
-  }
-  .container img {
-    width: 100px;
-  }
-  .card-text {
-    font-size: 14px;
-  }
-  .obt-soport h3 {
-    font-size: 35px;
-    text-align: center;
-  }
-  .obt-soport p {
-    text-align: center;
-  }
-  footer {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
+
+/* Grid iphone */
+.grid-iphone {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 600px);
+  gap: 5px;
 }
+
+.grid-iphone img {
+  width: 50%;
+  height: 70%;
+}
+
+.grid-iphone .iphone-11 {
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.grid-iphone .contenido img {
+  width: 40%;
+  height: 60%;
+}
+
+.grid-iphone .contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+
+.grid-iphone .contenido h2 {
+  font-size: 30px;
+}
+
+.grid-iphone .contenido p {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

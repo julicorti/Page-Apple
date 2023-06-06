@@ -16,10 +16,10 @@
     <header>
       <!-- Barra de Navegacion -->
       <div id="volver"></div>
-      <nav class="navbar navbar-expand-lg bg-light ">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./image/appleLogo.png" alt="..." height="36" />
+            <img src="./image/appleLogo.png" alt="..." class="logito" />
           </a>
           <button
             class="navbar-toggler"
@@ -50,7 +50,11 @@
                   Productos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Iphone</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./page/iphone.html"
+                      >Iphone</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">AppleWatch</a></li>
                   <li>
                     <a class="dropdown-item" href="#">Airpods</a>
@@ -68,10 +72,18 @@
                   Entretenimiento
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./page/appleTv.html">Apple Tv</a></li>
-                  <li><a class="dropdown-item" href="./page/">Apple Books</a></li>
                   <li>
-                    <a class="dropdown-item" href="./page/appleMusic.html">Apple Music </a>
+                    <a class="dropdown-item" href="./page/appleTv.html"
+                      >Apple Tv</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./page/">Apple Books</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./page/appleMusic.html"
+                      >Apple Music
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -79,7 +91,9 @@
                 <a class="nav-link" href="./page/soporte.html">Soporte</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./page/aboutUs.html">Sobre nosotros</a>
+                <a class="nav-link" href="./page/aboutUs.html"
+                  >Sobre nosotros</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#pie">Contacto</a>
@@ -204,35 +218,34 @@
 
         <!-- Sector de productos -->
       </div>
-      <div id="prod" class="contenedor">
-        <div class="carta">
-          <a href="./page/AppleWatch.html"
-            ><img src="./image/AppleWatch/AppleWatch-2.jpg" alt="AppleWatch"
-          /></a>
-          <div class="contenido">
-            <a href="./page/AppleWatch.html"><h3>Apple Watch</h3></a>
-          </div>
-        </div>
-        <div class="carta">
-          <a href="./page/airPods.html"
-            ><img src="./image/AirPods/AirPods-2.png" alt="Airpods"
-          /></a>
-
-          <div class="contenido">
-            <a href="./page/airPods.html"><h3>AirPods</h3></a>
-          </div>
-        </div>
-        <div class="carta">
-          <a href="./page/iphone.html"
-            ><img src="./image/Iphone/iphone12.webp" alt="Iphone"
-          /></a>
-
-          <div class="contenido">
-            <a href="./page/iphone.html"><h3>Iphone</h3></a>
-          </div>
+     
+      <div  id="prod" class="carta">
+        <a href="./page/AppleWatch.html"
+          ><img src="./image/AppleWatch/AppleWatch-2.jpg" alt="AppleWatch"
+        /></a>
+        <div class="contenido">
+          <a href="./page/AppleWatch.html"><h3>Apple Watch</h3></a>
         </div>
       </div>
-     <!-- Sector de entretenimiento -->
+      <div class="carta">
+        <a href="./page/airPods.html"
+          ><img src="./image/AirPods/AirPods-2.png" alt="Airpods"
+        /></a>
+
+        <div class="contenido">
+          <a href="./page/airPods.html"><h3>AirPods</h3></a>
+        </div>
+      </div>
+      <div class="carta">
+        <a href="./page/iphone.html"
+          ><img src="./image/Iphone/iphone12.webp" alt="Iphone"
+        /></a>
+
+        <div class="contenido">
+          <a href="./page/iphone.html"><h3>Iphone</h3></a>
+        </div>
+      </div>
+      <!-- Sector de entretenimiento -->
       <div class="container-grid">
         <div class="TV">
           <img src="./image/AppleTv/appleTv.jpg" alt="" />
@@ -242,19 +255,18 @@
         <div class="entretenimiento">
           <h3>Entretenimiento</h3>
 
-          <img class="" src="./image/AppleTvLogo.png" alt="" />
-          <img class="im" src="./image/appleMusicLogo.png" alt="" />
-          <img class="img-book" src="./image/appleBooksLogo.png" alt="" />
+          <img class="img-logo" src="./image/AppleTvLogo.png" alt="Logo" />
+          <img class="img-musica" src="./image/appleMusicLogo.png" alt="Logo" />
+          <img class="img-book" src="./image/appleBooksLogo.png" alt="Logo" />
         </div>
         <div class="book">
-          
-          <img src="./image/AppleBooks/appleBook-1.png" alt="" />
+          <img src="./image/AppleBooks/appleBook-1.png" alt="AppleBooks" />
           <h2>Apple Books</h2>
           <a href="./page/appleTv.html">Mas informacòn</a>
         </div>
 
         <div class="Music">
-          <img src="./image/AppleMusic/appleMusic-1.png" alt="" />
+          <img src="./image/AppleMusic/appleMusic-1.png" alt="AppleMusic" />
           <h2>Apple Music</h2>
           <a href="./page/appleMusic.html">Mas informacòn</a>
         </div>
@@ -266,18 +278,15 @@
         <ul>
           <li>
             <a href="#volver"
-              ><img src="./icon/arrow-left-solid.svg" alt="" />
-              Volver</a
+              ><img src="./icon/arrow-left-solid.svg" alt="Volver" /> </a
             >
           </li>
-          <li><img src="icon/facebook.svg" alt="facebook" />facebook</li>
+          <li><img src="./icon/facebook.svg" alt="facebook" /></li>
           <li>
-            <img src="icon/square-instagram.svg" alt="Instagram" />Instagram
+            <img src="./icon/square-instagram.svg" alt="Instagram" />
           </li>
-          <li><img src="icon/discord.svg" alt="Discord" />Discord</li>
-          <li>
-            <img src="./icon/twitter.svg" alt="twitter" />Twitter
-          </li>
+          <li><img src="./icon/discord.svg" alt="Discord" /></li>
+          <li><img src="./icon/twitter.svg" alt="twitter" /></li>
         </ul>
       </div>
     </footer>

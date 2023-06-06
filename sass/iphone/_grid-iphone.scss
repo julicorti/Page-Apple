@@ -1,0 +1,41 @@
+.grid-iphone{
+    margin: 10px;    
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 600px);
+    gap: 5px;
+}
+.grid-iphone img{
+     width: 50%;
+     height: 70%;
+    
+}
+
+.grid-iphone .iphone-11{
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.grid-iphone .contenido img{
+    width: 40%;
+    height: 60%;
+}
+
+.grid-iphone .contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+}
+.grid-iphone .contenido h2{
+    font-size: 30px;
+}
+.grid-iphone .contenido p{
+    font-size: 20px;
+}
+
