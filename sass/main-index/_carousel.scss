@@ -9,5 +9,23 @@
     object-fit: cover;
     top: 0;
     left: 0;
-    min-height: 50%;
+    min-height: 100%;
   }
+  h1.display-1.fw-bolder.text-capitalize.text-white {
+    text-shadow: 0 0 5px #000;
+    font-size: 6rem;
+}
+@media(max-width: 485px){
+  h1.display-1.fw-bolder.text-capitalize.text-white {
+    text-shadow: 0 0 5px #000;
+    font-size: 4rem;
+}
+}
+@media(max-width: 1346px){
+  h1.display-1.fw-bolder.text-capitalize.text-white {
+    top: 0;
+
+    text-shadow: 0 0 5px #000;
+    font-size: 4rem;
+}
+}

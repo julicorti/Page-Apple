@@ -52,3 +52,12 @@
     text-decoration: none;
     color: #000;
   }
+  @media screen and (max-width: 369px){
+    .carta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+  }

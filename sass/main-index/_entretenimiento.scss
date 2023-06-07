@@ -1,10 +1,10 @@
 .container-grid {
-    padding: 8px;
-    width: 99vw;
+  padding: 5px;
+    gap: 5px;
     height: max-content;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 600px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   
   .container-grid img {
@@ -14,8 +14,7 @@
   
   .container-grid .TV {
     background-color: rgb(0, 0, 0);
-    grid-column: 1;
-    grid-row: 1;
+   
     display: inline-block;
     text-align: center;
     display: flex;
@@ -36,8 +35,7 @@
   .container-grid .book {
     margin-top: 8px;
     background-color: rgb(0, 0, 0);
-    grid-column: 1;
-    grid-row: 2;
+   
     display: inline-block;
     text-align: center;
     display: flex;
@@ -46,27 +44,23 @@
     align-items: center;
   }
   .container-grid .Music {
-    margin-left: 8px;
-    margin-top: 8px;
-    grid-column: 2;
-    grid-row: 2;
     display: inline-block;
-    text-align: center;
     background-color: #000000;
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
   .container-grid .Music img {
-    width: 42%;
+    width: 50%;
     height: 250px;
   }
   .entretenimiento {
-    display: inline;
     text-align: center;
     background-color: #fdfdfd;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -81,3 +75,37 @@
     font-size: 50px;
     flex-direction: row;
   }
+  @media screen and (max-width: 1297px){
+    .container-grid img {
+      width: 50%;
+      height: 30%;
+      object-fit: contain;
+    }
+    .entretenimiento img {
+      margin: 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+  @media screen and (max-width: 769px){
+    .container-grid img {
+      width: 60%;
+      height: 30%;
+      object-fit: contain;
+    }
+
+  }
+  @media screen and (max-width: 705px){
+    .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    }
+    .entretenimiento img {
+      margin: 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+ 
