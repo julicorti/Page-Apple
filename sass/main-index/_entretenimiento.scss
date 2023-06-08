@@ -5,57 +5,55 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
-  
-  .container-grid img {
-    width: 50%;
-    height: 250px;
-  }
-  
-  .container-grid .TV {
-    background-color: rgb(0, 0, 0);
-   
-    display: inline-block;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .container-grid h2 {
+    img {
+      width: 50%;
+      height: 250px;
+    }
+    .TV {
+     background-color: rgb(0, 0, 0);
+    
+     display: inline-block;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+   }
+   h2 {
     color: #dfd3d3;
     justify-content: center;
     margin: 20px;
   }
-  .container-grid a {
+  a {
     text-decoration: none;
     color: #3280b4;
   }
+  .book {
+   margin-top: 8px;
+   background-color: rgb(0, 0, 0);
   
-  .container-grid .book {
-    margin-top: 8px;
-    background-color: rgb(0, 0, 0);
-   
-    display: inline-block;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+   display: inline-block;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ }
+ .Music {
+  display: inline-block;
+  background-color: #000000;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Music img {
+ width: 50%;
+ height: 250px;
+}
   }
-  .container-grid .Music {
-    display: inline-block;
-    background-color: #000000;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .container-grid .Music img {
-    width: 50%;
-    height: 250px;
-  }
+
   .entretenimiento {
     text-align: center;
     background-color: #fdfdfd;
@@ -63,18 +61,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .entretenimiento img {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    img {
+     margin: 10px;
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+   }
+   h3 {
+     font-size: 50px;
+     flex-direction: row;
+   }
   }
   
-  .container-grid .entretenimiento h3 {
-    font-size: 50px;
-    flex-direction: row;
-  }
   @media screen and (max-width: 1297px){
     .container-grid img {
       width: 50%;

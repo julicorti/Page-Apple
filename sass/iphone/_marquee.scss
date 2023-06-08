@@ -2,36 +2,36 @@
 
 
 .marquee {
+  margin-top: 25px;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: max-content;
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.534);
+    padding: 10px 0;
   }
   .marquee img{
-    width: 10vw;
-    object-fit: cover;
+    
+    height: 200px;
+    object-fit: contain;
   }
   .marquee span {
     display: inline-block;
-    padding-right: 50px;
-    animation: marquee 9s linear infinite;
+  
+    
+  }
+  .move{
+    animation: marquee 10s linear infinite ;
+    display: flex;
+    gap: 30px;
   }
   
   @keyframes marquee {
     from {
-      transform: translateX(20%);
+      transform: translateX(0%);
     }
     to {
-      transform: translateX(-600%);
+      transform: translateX(-1550px);
     }
   }
-.marquee .img-1{
-  width: 10vw;
-}
-.marquee .img-2{
-  width: 8vw;
-}
-.marquee .img-3{
-  width: 12vw;
-}

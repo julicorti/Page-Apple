@@ -1,41 +1,95 @@
-.grid-iphone{
-    margin: 10px;    
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(1, 600px);
-    gap: 5px;
-}
-.grid-iphone img{
-     width: 50%;
-     height: 70%;
-    
-}
-
-.grid-iphone .iphone-11{
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+.grid-iphone {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(1, max-content);
+  gap: 5px;
+  img {
+    width: 50%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .iphone {
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
     flex-direction: column;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-}
-.grid-iphone .contenido img{
-    width: 40%;
-    height: 60%;
-}
 
-.grid-iphone .contenido{
+    .img {
+      transform: rotateY(180deg);
+      width: 40%;
+      height: 100%;
+      object-position: bottom;
+    }
+  }
+  .contenido {
+    img {
+      width: 40%;
+      height: 60%;
+    }
+    .gif {
+      width: 60%;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: rgb(0, 0, 0);
+  }
+  h2 {
+    font-size: 60px;
+  }
+  p {
+    text-align: center;
+    font-size: 15px;
+  }
 }
-.grid-iphone .contenido h2{
-    font-size: 30px;
+@media (max-width: 1551px) {
+  .contenido {
+    p {
+      font-size: 15px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
-.grid-iphone .contenido p{
-    font-size: 20px;
+@media (max-width: 792px) {
+  .contenido {
+    h2 {
+      font-size: 45px;
+    }
+    p {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+  .grid-iphone {
+    .iphone {
+      h2 {
+        font-size: 45px;
+      }
+      .img {
+        width: 50%;
+        height: 100%;
+      }
+    }
+  }
 }
-
+@media (max-width: 701px) {
+    .grid-iphone{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        &:nth-child(4){
+            .iphone{
+                grid-row: 1;
+            }
+            .img{
+                grid-row: 2;
+            }
+        }
+    }
+}

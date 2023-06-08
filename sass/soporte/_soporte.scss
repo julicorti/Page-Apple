@@ -6,14 +6,42 @@
     text-align: center;
   }
   .soporte-grid {
+    gap: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 50px;
     align-items: center;
+    img {
+    
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+    }
   }
-  .soporte-grid img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+@media(max-width:651px){
+  .soporte-grid {
+    img{
+      width: 10vw;
+    }
   }
+}
+@media(max-width:505px){
+  .soporte-grid {
+    align-items: center;
+    img{
+      width: 60px;
+    }
+    
+  }
+
+}
+@media(max-width:469px){
+  .soporte-grid {
+    align-items: center;
+    img{
+      width: 44px;
+    }
+    
+  }
+
+}
