@@ -12,9 +12,9 @@
   .iphone {
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
       sans-serif;
-    flex-direction: column;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -54,7 +54,6 @@
   .contenido {
     p {
       font-size: 15px;
-      display: flex;
       flex-direction: row;
     }
   }
