@@ -69,3 +69,21 @@
 }
 
 }
+@media(max-width:610px){
+  .sopport-cards {
+  flex-direction: column;
+  gap: 0;
+  object-fit: cover;
+}
+
+}
+@media(max-width:375px){
+  .sopport-cards {
+    .soport-card{
+      width: 70vw;
+  
+    }
+    
+  }
+
+}

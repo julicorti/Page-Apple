@@ -387,18 +387,6 @@ footer div ul li img {
     gap: 0;
   }
 }
-@media (max-width: 610px) {
-  .sopport-cards {
-    flex-direction: column;
-    gap: 0;
-    object-fit: cover;
-  }
-}
-@media (max-width: 375px) {
-  .sopport-cards .soport-card {
-    width: 70vw;
-  }
-}
 /* Explicacion */
 .explicacion-1 {
   margin-top: 15px;
@@ -440,17 +428,12 @@ footer div ul li img {
     width: 80vw;
   }
 }
-@media (max-width: 414px) {
-  .explicacion-1 .steve {
-    width: 90vw;
-  }
-}
 /* Obtener soporte */
 .caja {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.534);
   background-color: rgba(216, 2, 2, 0);
   height: 30vh;
-  margin-top: 100px !important;
+  margin: 100px;
 }
 .caja .boton {
   margin-top: 50px;
@@ -524,7 +507,7 @@ footer div ul li img {
 }
 @media (max-width: 375px) {
   .caja h3 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 /* Iphone */
@@ -662,7 +645,7 @@ footer div ul li img {
   position: relative;
   width: 100%;
   height: max-content;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.137);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.534);
   padding: 10px 0;
 }
 
@@ -689,95 +672,5 @@ footer div ul li img {
     transform: translateX(-1550px);
   }
 }
-/* AirPods */
-.contenedor-airpods {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.contenedor-airpods img {
-  width: 20vw;
-}
-.contenedor-airpods h1 {
-  font-size: 60px;
-}
 
-@media (max-width: 614px) {
-  .contenedor-airpods img {
-    width: 25vw;
-  }
-}
-@media (max-width: 452px) {
-  .contenedor-airpods img {
-    width: 27vw;
-  }
-  .contenedor-airpods h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 414px) {
-  .contenedor-airpods img {
-    width: 30vw;
-  }
-}
-/* Imagenes Aripod*/
-.grid-airpods {
-  padding: 5px;
-  gap: 5px;
-  height: max-content;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  position: relative;
-}
-.grid-airpods img {
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-}
-.grid-airpods .airpods {
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-  flex-direction: column;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-}
-.grid-airpods .airpods img {
-  object-fit: contain;
-}
-.grid-airpods .airpods-n {
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-  flex-direction: column;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 60vh;
-}
-.grid-airpods .airpods-n img {
-  height: 100%;
-}
-
-@media (max-width: 1564px) {
-  .airpods-n img {
-    object-fit: contain;
-  }
-  .airpods img {
-    object-fit: contain;
-  }
-}
-@media (max-width: 1000px) {
-  .grid-airpods {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */

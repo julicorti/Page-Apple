@@ -1,4 +1,4 @@
-.grid-iphone {
+.grid-iphone{
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -25,7 +25,9 @@
       height: 100%;
       object-position: bottom;
     }
+    
   }
+
   .contenido {
     img {
       width: 40%;

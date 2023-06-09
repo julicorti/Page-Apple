@@ -1,0 +1,39 @@
+.contenedor-airpods {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    width: 20vw;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 614px) {
+  .contenedor-airpods {
+    img {
+      width: 25vw;
+    }
+  }
+}
+
+@media (max-width: 452px) {
+  .contenedor-airpods {
+    img {
+      width: 27vw;
+    }
+    h1{
+        font-size: 50px;
+    }
+  }
+}
+@media (max-width: 414px) {
+    .contenedor-airpods {
+      img {
+        width: 30vw;
+      }
+    } 
+  }
