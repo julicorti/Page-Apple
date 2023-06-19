@@ -10,14 +10,14 @@
       min-height: 100%;
     }
     h1.display-1.fw-bolder.text-capitalize.text-white {
-      text-shadow: 0 0 5px #000;
+      text-shadow: 0 0 5px $negro;
       font-size: 6rem;
   }
   }
   
 @media(max-width: 485px){
   h1.display-1.fw-bolder.text-capitalize.text-white {
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px $negro;
     font-size: 4rem;
 }
 }
@@ -25,7 +25,7 @@
   h1.display-1.fw-bolder.text-capitalize.text-white {
     top: 0;
 
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px $negro;
     font-size: 4rem;
 }
 }

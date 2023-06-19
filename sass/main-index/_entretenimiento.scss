@@ -1,24 +1,24 @@
 .container-grid {
   padding: 5px;
-    gap: 5px;
-    height: max-content;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    img {
-      width: 50%;
-      height: 250px;
-    }
-    .TV {
-     background-color: rgb(0, 0, 0);
-     display: flex;
-     text-align: center;
-     justify-content: center;
-     flex-direction: column;
-     align-items: center;
-   }
-   h2 {
-    color: #dfd3d3;
+  gap: 5px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  img {
+    width: 50%;
+    height: 250px;
+  }
+  .TV {
+    background-color: $negro;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    color: $blanco;
     justify-content: center;
     margin: 20px;
   }
@@ -27,87 +27,81 @@
     color: #3280b4;
   }
   .book {
-
-   background-color: rgb(0, 0, 0);
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
- }
- .Music {
-  background-color: #000000;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.Music img {
- width: 50%;
-
-}
-  }
-
-  .entretenimiento {
-    text-align: center;
-    background-color: #fdfdfd;
+    background-color: $negro;
     display: flex;
-    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    img {
-     margin: 10px;
-     width: 100px;
-     height: 100px;
-     object-fit: cover;
-   }
-   h3 {
-     font-size: 50px;
-     flex-direction: row;
-   }
   }
-  
-  @media screen and (max-width: 1297px){
-    .container-grid img {
-      width: 50%;
-      height: 30%;
-      object-fit: contain;
-    }
-    .entretenimiento img {
-      margin: 10px;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-    }
+  .Music {
+    background-color: $negro;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-  @media screen and (max-width: 769px){
-    .container-grid img {
-      width: 60%;
-      height: 30%;
-      object-fit: contain;
-    }
+  .Music img {
+    width: 50%;
+  }
+}
 
+.entretenimiento {
+  text-align: center;
+  background-color: $blanco;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
   }
-  @media screen and (max-width: 705px){
-    .container-grid {
+  h3 {
+    font-size: 50px;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1297px) {
+  .container-grid img {
+    width: 50%;
+    height: 30%;
+    object-fit: contain;
+  }
+  .entretenimiento img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 769px) {
+  .container-grid img {
+    width: 60%;
+    height: 30%;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 705px) {
+  .container-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    }
-    .entretenimiento img {
-      margin: 10px;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
+  }
+  .entretenimiento img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 320px) {
+  .entretenimiento {
+    h3 {
+      font-size: 30px;
     }
   }
-  @media screen and (max-width: 320px){
-    .entretenimiento{
-      h3 {
-        font-size: 30px;
-      }
-    }
-
-  }
-    
-  
+}

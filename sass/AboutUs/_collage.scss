@@ -8,9 +8,9 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: #000;
+    background-color: $negro;
     grid-row: span 2;
-    border: 5px solid white;
+    border: 5px solid $blanco;
   }
   div img {
     height: 100%;

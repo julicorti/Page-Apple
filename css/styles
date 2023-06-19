@@ -11,7 +11,6 @@ main {
   scroll-snap-type: y proximity;
 }
 
-/* Variables */
 /* Barra de navegacion */
 .navbar .navbar-expand-lg bg-light {
   justify-content: center;
@@ -35,20 +34,20 @@ main {
   min-height: 100%;
 }
 .carousel .carousel-item h1.display-1.fw-bolder.text-capitalize.text-white {
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px #000;
   font-size: 6rem;
 }
 
 @media (max-width: 485px) {
   h1.display-1.fw-bolder.text-capitalize.text-white {
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px #000;
     font-size: 4rem;
   }
 }
 @media (max-width: 1346px) {
   h1.display-1.fw-bolder.text-capitalize.text-white {
     top: 0;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px #000;
     font-size: 4rem;
   }
 }
@@ -72,7 +71,7 @@ main {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background: black;
+  background: rgba(255, 0, 0, 0);
   backdrop-filter: blur(4px);
 }
 
@@ -84,8 +83,8 @@ main {
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
-  background: white;
-  box-shadow: 0px 1px 10px black;
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   cursor: default;
   transition: all 400ms ease;
 }
@@ -104,7 +103,7 @@ main {
 }
 .carta .contenido a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 @media screen and (max-width: 369px) {
@@ -129,7 +128,7 @@ main {
   height: 250px;
 }
 .container-grid .TV {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   display: flex;
   text-align: center;
   justify-content: center;
@@ -137,7 +136,7 @@ main {
   align-items: center;
 }
 .container-grid h2 {
-  color: white;
+  color: #dfd3d3;
   justify-content: center;
   margin: 20px;
 }
@@ -146,7 +145,7 @@ main {
   color: #3280b4;
 }
 .container-grid .book {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   display: flex;
   text-align: center;
   justify-content: center;
@@ -154,7 +153,7 @@ main {
   align-items: center;
 }
 .container-grid .Music {
-  background-color: black;
+  background-color: #000000;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -167,7 +166,7 @@ main {
 
 .entretenimiento {
   text-align: center;
-  background-color: white;
+  background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -230,19 +229,16 @@ footer {
   display: flex;
   justify-content: center;
 }
-footer div ul {
-  padding-left: 0;
-}
 footer div ul li {
   display: inline-block;
   padding: 7px;
 }
 footer div ul li a {
-  color: black;
+  color: #000;
   text-decoration: none;
 }
 footer div ul li a:hover {
-  color: black;
+  color: #000;
   text-decoration: none;
 }
 footer div ul li img {
@@ -314,7 +310,7 @@ footer div ul li img {
   margin-top: 70px;
   width: 300px;
   height: 14vh;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 0 5px black;
   border-radius: 20px;
   display: flex;
@@ -404,8 +400,8 @@ footer div ul li img {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
   border: 1px solid;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(90, 81, 81, 0.1);
@@ -414,9 +410,9 @@ footer div ul li img {
   outline: none;
 }
 .caja .button:hover {
-  background-color: black;
+  background-color: #111309;
   box-shadow: 0px 15px 20px rgba(101, 110, 107, 0.4);
-  color: white;
+  color: #ffffff;
   transform: translateY(-7px);
 }
 
@@ -514,7 +510,7 @@ footer div ul li img {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: black;
+  background-color: #000;
   grid-row: span 2;
   border: 5px solid white;
 }
@@ -625,7 +621,7 @@ footer div ul li img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .grid-iphone .contenido img {
   width: 40%;
@@ -766,7 +762,7 @@ footer div ul li img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   text-align: center;
 }
 .grid-airpods .airpods img {
@@ -802,4 +798,4 @@ footer div ul li img {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.map */
