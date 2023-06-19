@@ -1,6 +1,6 @@
 .container-grid {
-  padding: 5px;
-  gap: 5px;
+  padding: $separacion;
+  gap: $separacion;
   height: max-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

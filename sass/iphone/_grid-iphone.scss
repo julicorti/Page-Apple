@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(1, max-content);
-  gap: 5px;
+  gap: $separacion;
   img {
     width: 50%;
     height: 70%;
