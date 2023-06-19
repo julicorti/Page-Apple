@@ -226,7 +226,6 @@ footer {
   margin: 25px 0;
   width: 100%;
   height: 30px;
-  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
 }
@@ -295,7 +294,7 @@ footer div ul li img {
 }
 /* Cartas soporte */
 .card {
-  margin-top: 70px;
+  margin-top: 50px;
   box-shadow: 0 0 3px rgb(104, 102, 102);
   border-radius: 20px;
   transition: scale 0.2s;
@@ -337,6 +336,8 @@ footer div ul li img {
 @media (max-width: 977px) {
   .sopport-cards {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 792px) {
@@ -370,12 +371,22 @@ footer div ul li img {
     height: 20vh;
   }
 }
+@media (max-width: 820px) {
+  .sopport-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* Obtener soporte */
 .caja {
+  margin: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.534);
   background-color: rgba(216, 2, 2, 0);
   height: 30vh;
-  margin-top: 100px !important;
+  margin-top: 50px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .caja .boton {
   margin-top: 50px;
@@ -420,18 +431,23 @@ footer div ul li img {
   transform: translateY(-7px);
 }
 
-@media (max-width: 752px) {
+@media (max-width: 820px) {
+  .caja {
+    margin: 10px;
+  }
+}
+@media (max-width: 806px) {
   .caja {
     height: fit-content;
-    margin-top: 15px;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
   }
 }
 @media (max-width: 552px) {
+  .caja {
+    margin-bottom: 10px;
+  }
   h3 {
     text-align: center;
   }
@@ -443,17 +459,22 @@ footer div ul li img {
 }
 @media (max-width: 479px) {
   .caja {
-    margin: 0;
+    margin: 0px;
     height: fit-content;
     width: 100%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 412px) {
   .caja {
+    margin: 0px;
+    margin-bottom: 2px;
     height: fit-content;
   }
   .caja h3 {
     font-size: 35px;
+  }
+  .caja p {
+    font-size: 15px;
   }
 }
 /* Explicacion */
