@@ -1,4 +1,4 @@
-/* Receteo */
+/* General */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +26,6 @@ main {
   height: 93.9vh;
   width: 100%;
 }
-
 .carousel .carousel-item img {
   position: absolute;
   -o-object-fit: cover;
@@ -35,7 +34,6 @@ main {
   left: 0;
   min-height: 100%;
 }
-
 .carousel .carousel-item h1.display-1.fw-bolder.text-capitalize.text-white {
   text-shadow: 0 0 5px #000;
   font-size: 6rem;
@@ -70,7 +68,6 @@ main {
   height: 100vh;
   position: relative;
 }
-
 .contenedor::before {
   content: "";
   inset: 0;
@@ -94,24 +91,20 @@ main {
   cursor: default;
   transition: all 400ms ease;
 }
-
 .carta:hover {
   box-shadow: 5px 5px 20px gray;
   transform: translateY(-3%);
 }
-
 .carta img {
   width: 100%;
   height: 210px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 .carta .contenido h3 {
   padding: 15px;
   text-align: center;
 }
-
 .carta .contenido a {
   text-decoration: none;
   color: #000;
@@ -135,46 +128,36 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-
 .container-grid img {
   width: 50%;
   height: 250px;
 }
-
 .container-grid .TV {
   background-color: rgb(0, 0, 0);
-  display: inline-block;
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-
 .container-grid h2 {
   color: #dfd3d3;
   justify-content: center;
   margin: 20px;
 }
-
 .container-grid a {
   text-decoration: none;
   color: #3280b4;
 }
-
 .container-grid .book {
-  margin-top: 8px;
   background-color: rgb(0, 0, 0);
-  display: inline-block;
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-
 .container-grid .Music {
-  display: inline-block;
   background-color: #000000;
   display: flex;
   text-align: center;
@@ -182,10 +165,8 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
 .container-grid .Music img {
   width: 50%;
-  height: 250px;
 }
 
 .entretenimiento {
@@ -196,7 +177,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 .entretenimiento img {
   margin: 10px;
   width: 100px;
@@ -204,7 +184,6 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .entretenimiento h3 {
   font-size: 50px;
   flex-direction: row;
@@ -246,6 +225,11 @@ main {
        object-fit: cover;
   }
 }
+@media screen and (max-width: 320px) {
+  .entretenimiento h3 {
+    font-size: 30px;
+  }
+}
 /* Footer */
 footer {
   margin: 25px 0;
@@ -255,26 +239,21 @@ footer {
   display: flex;
   justify-content: center;
 }
-
 footer div ul {
   padding-left: 0;
 }
-
 footer div ul li {
   display: inline-block;
   padding: 7px;
 }
-
 footer div ul li a {
   color: #000;
   text-decoration: none;
 }
-
 footer div ul li a:hover {
   color: #000;
   text-decoration: none;
 }
-
 footer div ul li img {
   width: 30px;
   height: 30px;
@@ -295,7 +274,6 @@ footer div ul li img {
   justify-content: center;
   align-items: center;
 }
-
 .soporte-grid img {
   width: 100%;
   height: 100px;
@@ -319,51 +297,12 @@ footer div ul li img {
 @media (max-width: 469px) {
   .soporte-grid {
     align-items: center;
+    flex-direction: column;
   }
   .soporte-grid img {
-    width: 44px;
+    width: 70px;
   }
 }
-/* Collage imagenes */
-.about-container {
-  display: grid;
-  height: 50vh;
-  width: 100%;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.about-container div {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: #000;
-  grid-row: span 2;
-  border: 5px solid white;
-}
-
-.about-container div img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.about-container .img-2 {
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-
-.about-container .img-3 {
-  grid-row: 1/2;
-  grid-column: 3/4;
-}
-
-.about-container .img-6 {
-  grid-column: 2/4;
-  grid-row: 2/4;
-}
-
 /* Cartas soporte */
 .card {
   margin-top: 70px;
@@ -371,7 +310,6 @@ footer div ul li img {
   border-radius: 20px;
   transition: scale 0.2s;
 }
-
 .card:hover {
   scale: 1.1;
 }
@@ -382,7 +320,6 @@ footer div ul li img {
   align-items: center;
   gap: 40px;
 }
-
 .sopport-cards .soport-card {
   margin-top: 70px;
   width: 300px;
@@ -396,17 +333,14 @@ footer div ul li img {
   flex-direction: column;
   transition: scale 0.2s;
 }
-
 .sopport-cards .soport-card:hover {
   scale: 1.1;
 }
-
 .sopport-cards .soport-card img {
   height: 60%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 .sopport-cards .soport-card h2 {
   font-size: 15px;
 }
@@ -432,6 +366,111 @@ footer div ul li img {
     gap: 0;
   }
 }
+@media (max-width: 610px) {
+  .sopport-cards {
+    flex-direction: column;
+    gap: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 375px) {
+  .sopport-cards .soport-card {
+    width: 80vw;
+  }
+  .sopport-cards img {
+    height: 20vh;
+  }
+}
+/* Obtener soporte */
+.caja {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.534);
+  background-color: rgba(216, 2, 2, 0);
+  height: 30vh;
+  margin-top: 100px !important;
+}
+.caja .boton {
+  margin-top: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caja h3 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caja p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.caja .button {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(90, 81, 81, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.caja .button:hover {
+  background-color: #111309;
+  box-shadow: 0px 15px 20px rgba(101, 110, 107, 0.4);
+  color: #ffffff;
+  transform: translateY(-7px);
+}
+
+@media (max-width: 752px) {
+  .caja {
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 15px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 552px) {
+  h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 481px) {
+  p {
+    text-align: center;
+  }
+}
+@media (max-width: 479px) {
+  .caja {
+    margin: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .caja {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .caja h3 {
+    font-size: 35px;
+  }
+}
 /* Explicacion */
 .explicacion-1 {
   margin-top: 15px;
@@ -440,14 +479,12 @@ footer div ul li img {
   justify-content: center;
   align-items: center;
 }
-
 .explicacion-1 ul li {
   font-size: 20px;
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
-
 .explicacion-1 .steve {
   box-shadow: #fdfdfd;
   margin-top: 30px;
@@ -475,93 +512,51 @@ footer div ul li img {
     width: 80vw;
   }
 }
-/* Obtener soporte */
-.caja {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.534);
-  background-color: rgba(216, 2, 2, 0);
-  height: 30vh;
-  margin: 100px;
+@media (max-width: 414px) {
+  .explicacion-1 .steve {
+    width: 90vw;
+  }
 }
-
-.caja .boton {
-  margin-top: 50px;
+/* Collage imagenes */
+.about-container {
+  display: grid;
+  height: 50vh;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.about-container div {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  grid-row: span 2;
+  border: 5px solid white;
+}
+.about-container div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-container .img-2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.about-container .img-3 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.about-container .img-6 {
+  grid-column: 2/4;
+  grid-row: 2/4;
 }
 
-.caja h3 {
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Cartas */
+.container .row .card {
+  width: 18rem;
 }
 
-.caja p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-
-.caja .button {
-  width: 140px;
-  height: 45px;
-  font-family: "Roboto", sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(90, 81, 81, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-
-.caja .button:hover {
-  background-color: #111309;
-  box-shadow: 0px 15px 20px rgba(101, 110, 107, 0.4);
-  color: #ffffff;
-  transform: translateY(-7px);
-}
-
-@media (max-width: 752px) {
-  .caja {
-    margin-top: 15px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-}
-@media (max-width: 552px) {
-  h3 {
-    text-align: center;
-  }
-}
-@media (max-width: 481px) {
-  p {
-    text-align: center;
-  }
-}
-@media (max-width: 479px) {
-  .caja {
-    margin: 0;
-    height: 35vh;
-    width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .caja h3 {
-    font-size: 30px;
-  }
-}
 /* Iphone */
 .contenedor-iphone {
   width: 100%;
@@ -570,13 +565,12 @@ footer div ul li img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
-
 .contenedor-iphone img {
   margin-top: 60px;
   width: 50vw;
 }
-
 .contenedor-iphone h1 {
   font-size: 100px;
 }
@@ -605,6 +599,14 @@ footer div ul li img {
     width: 90vw;
     align-items: center;
   }
+  .contenedor-iphone h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .contenedor-iphone {
+    height: 0%;
+  }
 }
 /* Grid iphone */
 .grid-iphone {
@@ -614,24 +616,21 @@ footer div ul li img {
   grid-template-rows: repeat(1, max-content);
   gap: 5px;
 }
-
 .grid-iphone img {
   width: 50%;
   height: 70%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 .grid-iphone .iphone {
   font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-  flex-direction: column;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
 }
-
 .grid-iphone .iphone .img {
   transform: rotateY(180deg);
   width: 40%;
@@ -639,7 +638,6 @@ footer div ul li img {
   -o-object-position: bottom;
      object-position: bottom;
 }
-
 .grid-iphone .contenido {
   display: flex;
   justify-content: center;
@@ -647,20 +645,16 @@ footer div ul li img {
   flex-direction: column;
   color: rgb(0, 0, 0);
 }
-
 .grid-iphone .contenido img {
   width: 40%;
   height: 60%;
 }
-
 .grid-iphone .contenido .gif {
   width: 60%;
 }
-
 .grid-iphone h2 {
   font-size: 60px;
 }
-
 .grid-iphone p {
   text-align: center;
   font-size: 15px;
@@ -669,7 +663,6 @@ footer div ul li img {
 @media (max-width: 1551px) {
   .contenido p {
     font-size: 15px;
-    display: flex;
     flex-direction: row;
   }
 }
@@ -710,7 +703,7 @@ footer div ul li img {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.534);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.137);
   padding: 10px 0;
 }
 
@@ -738,4 +731,98 @@ footer div ul li img {
     transform: translateX(-1550px);
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/* AirPods */
+.contenedor-airpods {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor-airpods img {
+  width: 20vw;
+}
+.contenedor-airpods h1 {
+  font-size: 60px;
+}
+
+@media (max-width: 614px) {
+  .contenedor-airpods img {
+    width: 25vw;
+  }
+}
+@media (max-width: 452px) {
+  .contenedor-airpods img {
+    width: 27vw;
+  }
+  .contenedor-airpods h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 414px) {
+  .contenedor-airpods img {
+    width: 30vw;
+  }
+}
+/* Imagenes Aripod*/
+.grid-airpods {
+  padding: 5px;
+  gap: 5px;
+  height: -moz-max-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+.grid-airpods img {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-airpods .airpods {
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+.grid-airpods .airpods img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.grid-airpods .airpods-n {
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60vh;
+}
+.grid-airpods .airpods-n img {
+  height: 100%;
+}
+
+@media (max-width: 1564px) {
+  .airpods-n img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .airpods img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 1000px) {
+  .grid-airpods {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=styles.css.map */

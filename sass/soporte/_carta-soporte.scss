@@ -80,10 +80,12 @@
 @media(max-width:375px){
   .sopport-cards {
     .soport-card{
-      width: 70vw;
+      width: 80vw;
   
     }
-    
+    img{
+      height: 20vh;
+    }
   }
 
 }

@@ -45,7 +45,7 @@
 }
 .Music img {
  width: 50%;
- height: 250px;
+
 }
   }
 
@@ -101,6 +101,13 @@
       object-fit: cover;
     }
   }
-  
+  @media screen and (max-width: 320px){
+    .entretenimiento{
+      h3 {
+        font-size: 30px;
+      }
+    }
+
+  }
     
   

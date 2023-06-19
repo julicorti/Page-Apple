@@ -38,8 +38,10 @@
 @media(max-width:469px){
   .soporte-grid {
     align-items: center;
+    flex-direction: column;
+
     img{
-      width: 44px;
+      width: 70px;
     }
     
   }
